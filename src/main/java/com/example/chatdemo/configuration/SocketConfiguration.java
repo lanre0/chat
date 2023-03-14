@@ -13,7 +13,7 @@ public class SocketConfiguration implements WebSocketMessageBrokerConfigurer{
         registry.addEndpoint("/ws").withSockJS();
     }
 
-    public void configureMessageBroker(MessageBrokerRegistry registry) {
+    public void configureMessageBroker(MessageBrokerRegistry registry) {  
         registry.setApplicationDestinationPrefixes("/application");
         registry.enableSimpleBroker("/topic");
     }
