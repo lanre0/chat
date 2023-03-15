@@ -6,7 +6,7 @@ import com.example.chatdemo.enumerator.MessageOptions;
 @Data
 public class Messages {
 
-    private MessageOptions messageOptions;
+    private MessageOptions type;
     private String content;
     private String sender;
 

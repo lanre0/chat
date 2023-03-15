@@ -36,7 +36,7 @@ public class SocketEventListener {
 
 
             Messages message = new Messages();
-            message.setMessageOptions(MessageOptions.LEAVE);
+            message.setType(MessageOptions.LEAVE);
             message.setSender(username);
 
             messagingTemplate.convertAndSend("/topic/public",message);
